@@ -18,7 +18,7 @@ const getCoordenadas = async lugar => {
 
   const data = resp.data.Results;
 
-  if (data.length == 0) throw Error(`el lugar ${lugar} no existe`);
+  if (data.length == 0) throw Error(`El lugar ${lugar} no existe`);
 
   return {
     lugar: data[0].name,
