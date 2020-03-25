@@ -1,3 +1,7 @@
 const argv = require('./config/yargs').argv;
+const lugarServices = require('./servicios/lugar');
 
-console.log(argv);
+lugarServices
+  .getCoordenadas(argv.lugar)
+  .then(resp => console.log(resp))
+  .catch(err => console.log(err));

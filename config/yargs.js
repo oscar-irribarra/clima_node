@@ -1,5 +1,5 @@
 const argv = require('yargs')
-                .command('mostrar', 'retorna el clima en el lugar indicado', {
+                .options({
                     lugar: {
                         demand: true,
                         alias: 'l',
